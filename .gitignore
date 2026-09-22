@@ -1,0 +1,13 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Local Database & Raw Ingestion Cache
+*.db
+*.sqlite3
+raw_data.json
+
+# Local Developer & AI Context Notes (Keep private)
+PROJECT_NOTES.md
