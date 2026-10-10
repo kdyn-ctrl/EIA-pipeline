@@ -9,5 +9,5 @@ __pycache__/
 *.sqlite3
 raw_data.json
 
-# Local Developer & AI Context Notes (Keep private)
+# Local Developer Notes (Keep private)
 PROJECT_NOTES.md
