@@ -1,5 +1,10 @@
 # Automated EIA Weekly Petroleum Inventory Data Pipeline
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://eia-pipeline-5rxbqvmursugxhzg2vw3de.streamlit.app/)
+[![Weekly Pipeline](https://github.com/kdyn-ctrl/EIA-pipeline/actions/workflows/pipeline.yml/badge.svg)](https://github.com/kdyn-ctrl/EIA-pipeline/actions/workflows/pipeline.yml)
+
+🌐 **Live Interactive Dashboard:** [eia-pipeline.streamlit.app](https://eia-pipeline-5rxbqvmursugxhzg2vw3de.streamlit.app/)
+
 An automated, production-grade ETL data pipeline that extracts, validates, and stores weekly fundamental energy inventory data from the **U.S. Energy Information Administration (EIA) API v2**.
 
 Designed with **idempotent database operations**, **defensive data validation**, and **structured production logging** for energy commodity analytics and quantitative research.
