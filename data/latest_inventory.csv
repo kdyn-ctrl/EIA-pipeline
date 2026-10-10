@@ -1,0 +1,97 @@
+period,product_name,area_name,inventory_barrels,ingested_at
+2026-10-02,Crude Oil,PADD 1,7744,2026-10-10 21:17:49
+2026-10-02,Crude Oil,PADD 2,106981,2026-10-10 21:17:49
+2026-10-02,Crude Oil,PADD 3,243599,2026-10-10 21:17:49
+2026-10-02,Crude Oil,PADD 4,22352,2026-10-10 21:17:49
+2026-10-02,Crude Oil,PADD 5,43458,2026-10-10 21:17:49
+2026-10-02,Crude Oil,U.S.,424134,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 1,21687,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 1A,2461,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 1B,9725,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 1C,9502,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 2,26205,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 3,43857,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 4,3453,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,PADD 5,9937,2026-10-10 21:17:49
+2026-10-02,Distillate Fuel Oil,U.S.,105138,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1,20821,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1A,2451,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1B,9327,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1C,9043,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 2,25339,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 3,35392,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 4,3283,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 5,8900,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",U.S.,93734,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1,233,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1A,0,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1B,145,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1C,88,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 2,425,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 3,5431,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 4,82,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 5,791,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",U.S.,6963,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1,633,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1A,10,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1B,253,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1C,370,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 2,441,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 3,3033,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 4,88,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 5,246,2026-10-10 21:17:49
+2026-10-02,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",U.S.,4442,2026-10-10 21:17:49
+2026-10-02,Gasoline Blending Components,PADD 1,50362,2026-10-10 21:17:49
+2026-10-02,Gasoline Blending Components,PADD 2,37483,2026-10-10 21:17:49
+2026-10-02,Gasoline Blending Components,PADD 3,70833,2026-10-10 21:17:49
+2026-10-02,Gasoline Blending Components,PADD 4,5855,2026-10-10 21:17:49
+2026-10-02,Gasoline Blending Components,PADD 5,26313,2026-10-10 21:17:49
+2026-10-02,Gasoline Blending Components,U.S.,190844,2026-10-10 21:17:49
+2026-09-11,Crude Oil,PADD 1,8195,2026-10-06 06:03:11
+2026-09-11,Crude Oil,PADD 2,99663,2026-10-06 06:03:11
+2026-09-11,Crude Oil,PADD 3,246172,2026-10-06 06:03:11
+2026-09-11,Crude Oil,PADD 4,23409,2026-10-06 06:03:11
+2026-09-11,Crude Oil,PADD 5,45989,2026-10-06 06:03:11
+2026-09-11,Crude Oil,U.S.,423429,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 1,21583,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 1A,2954,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 1B,10531,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 1C,8099,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 2,28790,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 3,43759,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 4,3300,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,PADD 5,10427,2026-10-06 06:03:11
+2026-09-11,Distillate Fuel Oil,U.S.,107859,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1,20642,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1A,2946,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1B,10075,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 1C,7621,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 2,27983,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 3,35560,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 4,3153,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",PADD 5,9628,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, 0 to 15 ppm Sulfur",U.S.,96966,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1,275,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1A,0,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1B,144,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 1C,131,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 2,359,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 3,5301,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 4,62,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",PADD 5,572,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater Than 500 ppm Sulfur",U.S.,6569,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1,666,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1A,8,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1B,312,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 1C,346,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 2,448,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 3,2898,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 4,85,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",PADD 5,226,2026-10-06 06:03:11
+2026-09-11,"Distillate Fuel Oil, Greater than 15 to 500 ppm Sulfur",U.S.,4324,2026-10-06 06:03:11
+2026-09-11,Gasoline Blending Components,PADD 1,48587,2026-10-06 06:03:11
+2026-09-11,Gasoline Blending Components,PADD 2,40475,2026-10-06 06:03:11
+2026-09-11,Gasoline Blending Components,PADD 3,72618,2026-10-06 06:03:11
+2026-09-11,Gasoline Blending Components,PADD 4,5530,2026-10-06 06:03:11
+2026-09-11,Gasoline Blending Components,PADD 5,25940,2026-10-06 06:03:11
+2026-09-11,Gasoline Blending Components,U.S.,193150,2026-10-06 06:03:11

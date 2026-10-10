@@ -1,3 +1,4 @@
+import csv
 import json
 import logging 
 import os
@@ -5,25 +6,26 @@ import sqlite3
 import requests
 from dotenv import load_dotenv
 
-# 1. Configure strucutred production logging
+# 1. Configure structured production logging
 logging.basicConfig(
     level=logging.INFO,
-    format= "%(asctime)s [%(levelname)s] %(message)s",
-    datefmt= "%Y -%m -%d %H:%M:%S",
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
 )
 
 API_URL = "https://api.eia.gov/v2/petroleum/stoc/wstk/data/"
 RAW_DATA_PATH = "raw_data.json"
-DB_PATH = "inventory.db" 
+DB_PATH = "inventory.db"
+CSV_PATH = "data/latest_inventory.csv"
 
 
 def extract_data() -> bool:
-    """Fetch raw weekly petroleum inventory data from EIA API"""
+    """Fetch raw weekly petroleum inventory data from EIA API."""
     load_dotenv()
     api_key = os.getenv("EIA_API_KEY")
 
     if not api_key:
-        logging.error("EIA_API_KEY enviornment variable is missing")
+        logging.error("EIA_API_KEY environment variable is missing.")
         return False
 
     params = {
@@ -47,12 +49,13 @@ def extract_data() -> bool:
         return True
     
     except requests.RequestException as e:
-        logging.error("API request failed %s", e)
+        logging.error("API request failed: %s", e)
         return False
     
+
 def load_data() -> tuple[int, int]:
-    """Parse raw JSON and upsert records into SQLite database"""
-    logging.info("Starting database laoding into %s...",DB_PATH)
+    """Parse raw JSON and upsert records into SQLite database."""
+    logging.info("Starting database loading into %s...", DB_PATH)
 
     with open(RAW_DATA_PATH, "r") as f:
         payload = json.load(f)
@@ -96,18 +99,44 @@ def load_data() -> tuple[int, int]:
     return inserted_count, skipped_count
 
 
+def export_to_csv(csv_path: str = CSV_PATH) -> bool:
+    """Export database records to a public CSV for GitHub visual rendering."""
+    logging.info("Exporting database records to %s...", csv_path)
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+
+    with sqlite3.connect(DB_PATH) as conn:
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT period, product_name, area_name, inventory_barrels, ingested_at
+            FROM petroleum_inventory
+            ORDER BY period DESC, product_name ASC, area_name ASC
+            """
+        )
+        rows = cursor.fetchall()
+        headers = [col[0] for col in cursor.description]
+
+    with open(csv_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(headers)
+        writer.writerows(rows)
+
+    logging.info("Export complete: %d records written to %s", len(rows), csv_path)
+    return True
+
+
 def run_pipeline():
     """Master pipeline runner."""
-    logging.info("=== Starting EIA Petroleum Pipleline Run ===")
+    logging.info("=== Starting EIA Petroleum Pipeline Run ===")
     success = extract_data()
     if not success:
         logging.error("Pipeline aborted: Extraction failed.")
         return
 
-
     load_data()
+    export_to_csv()
     logging.info("=== Pipeline Run Finished Successfully ===")
 
 
 if __name__ == "__main__":
-    run_pipeline() 
+    run_pipeline()

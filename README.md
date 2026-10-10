@@ -108,6 +108,27 @@ ORDER BY inventory_barrels DESC;
 
 ---
 
+## 📊 Live Interactive Dashboard (`app.py`)
+
+An interactive analytics web dashboard built with **Streamlit** to visualize regional supply/demand fundamentals and PADD inventory trends.
+
+### Running Locally:
+```bash
+streamlit run app.py
+```
+
+### Features:
+- **Top-Level KPI Cards:** Real-time national ending stocks for Crude Oil, Gasoline, and Distillates.
+- **PADD Comparison Bar Chart:** Direct comparison of inventory balances across regional refining hubs (e.g. PADD 1 vs. PADD 3).
+- **Searchable Table & Filter:** Interactive data grid with instant CSV export.
+
+---
+
+## 📁 Public Data Access (Git Scraping)
+The latest weekly data is automatically exported to [`data/latest_inventory.csv`](data/latest_inventory.csv) on every scheduled pipeline run. GitHub automatically renders this as an interactive spreadsheet in your browser.
+
+---
+
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
@@ -134,9 +155,13 @@ EIA_API_KEY=your_eia_api_key_here
 ```
 *(Get a free API key at [eia.gov/opendata](https://www.eia.gov/opendata/))*
 
-### 4. Run the Pipeline
+### 4. Run the Pipeline & Dashboard
 ```bash
+# Run automated ETL ingestion
 python pipeline.py
+
+# Launch interactive analytics dashboard
+streamlit run app.py
 ```
 
 ### Output:

@@ -8,6 +8,9 @@ on:
   # Manual trigger: Allows running the pipeline on-demand from the GitHub Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
@@ -31,3 +34,16 @@ jobs:
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
         run: |
           python pipeline.py
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/latest_inventory.csv
+          git diff --quiet && git diff --staged --quiet || (git commit -m "data: update weekly petroleum inventory [skip ci]" && git push)
+
+      - name: Upload SQLite Database Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: eia-inventory-database
+          path: inventory.db
